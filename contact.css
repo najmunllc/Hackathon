@@ -1,0 +1,202 @@
+@import url(<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12205.47177708677!2d-75.0260663!3d40.111803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1697401601171!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>);
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', Arial;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(laptop.jpeg);
+    background-size: cover;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #6b006d;
+}
+.contact .content p {
+    font-weight: 300;
+    color: #fd574f;
+}
+
+
+
+/* section places the contact info and form into 2 columns */
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0px;
+    display: flex;
+}
+
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fd574f;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: #6b006d;
+}
+
+/* contact form styling begins here */
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #6b006d;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #fd574f;
+}
+
+.contactForm .inputBox  input:focus ~ span, 
+.contactForm .inputBox  input:valid ~ span
+.contactForm .inputBox  textarea:focus ~ span,
+.contactForm .inputBox  textarea:valid ~ span
+{
+    color: #6b006d;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input [type="submit"] {
+    width: 100px;
+    background: #fd574f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Style for the button container */
+.back-button-container {
+    position: fixed;
+    top: 20px; /* Adjust the distance from the top */
+    right: 20px; /* Adjust the distance from the right */
+    z-index: 1; /* Ensure it's above other elements */
+}
+
+/* Style for the "Back to Home" button */
+.back-button {
+    padding: 10px 20px;
+    background-color: #6d006d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Add hover effect if desired */
+.back-button:hover {
+    background-color: #fd574f;
+}
+
+@media (max-width: 991px){
+    .contact {
+        padding: 50px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .contactInfo {
+        margin-bottom: 40px;
+    }
+    .container .contactInfo {
+        width: 100%;
+    }
+}
+
+/* Footer styles */
+.footer {
+    background-color: #6d006d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center align items horizontally in the footer */
+    align-items: center; /* Center align items vertically in the footer */
+    position: fixed;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}

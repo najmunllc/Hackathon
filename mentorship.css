@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(laptop.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    background: radial-gradient(rgba(255, 255, 255, 0.6));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: #6d006d;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #6d006d;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #fd574f;
+    cursor: pointer;
+}
+
+.search {
+    width: 300px;
+    float: left;
+    margin-left: 270px;
+    cursor: pointer;
+}
+
+.srch {
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #6d006d;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #6d006d;
+    border: 2px solid #6d006d;
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.srch:focus {
+    outline: none;
+}
+
+/* Style for the button container */
+.back-button-container {
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    left: 20px; /* Adjust the distance from the left */
+    z-index: 1; /* Ensure it's above other elements */
+}
+
+/* Style for the "Back to Home" button */
+.back-button {
+    padding: 10px 20px;
+    background-color: #6d006d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Add hover effect if desired */
+.back-button:hover {
+    background-color: #fd574f;
+}
+
+
+
+
+
+
+
+.container .mission-vision {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fd574f;
+    text-align: center;
+    padding: 20px;
+}
+
+.container .mission-vision h2{
+    font-size: 35px;
+    font-weight: 300;
+    font-family: 'Times New Roman';
+}
+
+.mission-vision p{
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+    text-align: center; /* Center the text */
+}
+
+.content .par {
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    padding: 20px; /* Add spacing around the paragraph */
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-top: 40px; /* Add top padding */
+    letter-spacing: 2px;
+}
+
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: #6d006d;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover {
+    background-color: #fd574f;
+}
+
+.content span {
+    color: #6d006d;
+    font-size: 60px;
+}
+
+.form {
+    width: 240px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 50%);
+}
+
+/* form Styling beginning*/
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: url("#") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Droid Serif', serif;
+}
+
+#container {
+    background: rgba(0, 0, 0, 0.6);
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+    width: 18.75rem;
+    height: 28rem;
+    margin: auto;
+    /*position: absolute; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+header {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3rem;
+    height: 3rem;
+    background: rgba(253, 87, 79, 1);
+    font-size: 1.4rem;
+    color: #d3d3d3;
+}
+
+fieldset {
+    border: 0;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background: rgba(253, 87, 79, 1);
+    border: 0;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+input {
+    background: transparent;
+    border: 0;
+    border-left: 4px solid;
+    border-color: #fd574f;
+    padding: 10px;
+    color: white;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: 0;
+    background: rgba(235, 30, 54, 0.3);
+    border-radius: 1.2rem;
+    border-color: transparent;
+}
+
+::placeholder {
+    color: #d3d3d3;
+}
+
+/*Media queries */
+
+@media all and (min-width: 481px) and (max-width: 568px) {
+    #container {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+    @media all and (min-width: 569px) and (max-width: 768px) {
+        #container {
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+    }
+/* form styling ending*/
+
+/* This section is to make our site responsive to different devices*/
+     
+@media screen and (max-width:1170px) {
+    /*Login-box*/
+
+    .main {
+        padding-left: 20px;
+        height: 180vh;
+        /*vh stands for viewport height*/
+    }
+
+    .form {
+        margin-left: -30px;
+        width: 250px;
+        height: 380px;
+        background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+        position: absolute;
+        top: 420px;
+        left: 50px;
+        transform: translate(0%, -5%);
+        border-radius: 10px;
+        padding: 25px;
+    }
+
+    .form input{
+        width: 240px;
+        height: 35px;
+        background: transparent;
+        border-bottom: 1px solid #fd574f;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: sans-serif;
+    }
+
+    .btnn a{
+        font-size: 16px;
+    }
+
+    .form .link a {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 830px) {
+        /*Tablet*/
+        .content{
+            margin-top: 120px;
+            width: 80%;
+            margin-left: 40px;
+        }
+
+        .content h1, .content span {
+            font-size: 6vw;
+        }
+
+        .content .par {
+            width: 90%;
+            font-size: 1.8vw;
+        }
+
+        .content .cn{
+            width: 15%;
+            height: 4.5vw;
+            font-size: 2vw;
+        }
+
+        .content a{
+            font-size: 2vw;
+        }
+
+        .logo {
+            margin-left: 240px;
+            width: 100%;
+            margin-top: 15px;
+            font-size: 5vw;
+        }
+
+        .menu {
+            width: 100%;
+        }
+
+        ul{
+            margin-top: -5px;
+            margin-left: 5px;
+        }
+
+        ul li {
+            margin-left: 60px;
+        }
+
+        ul li a{
+            font-size: 2vw;
+        }
+
+        .search {
+            margin-top: -20px;
+            margin-left: 60px;
+        }
+
+        .srch {
+            height: 30px;
+            width: 160px;
+            font-size: 12px;
+        }
+
+        .btn {
+            height: 30px;
+            width: 70px;
+        }
+
+        .main {
+            padding-left: 20px;
+            height: 180vh;
+            /*vh stands for viewport height*/
+        }
+
+        .mentorship-form {
+            margin-left: -30px;
+            width: 250px;
+            height: 380px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+            position: absolute;
+            top: 420px;
+            left: 50px;
+            transform: translate(0%, -5%);
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        .mentorship-form input{
+            width: 240px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 1px solid #fd574f;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+        }
+
+        .btnn a{
+            font-size: 16px;
+        }
+
+        .form .link a {
+            font-size: 16px;
+        }
+
+    }
+    @media screen and (max-width: 600px) {
+        /*Ipad old version responsive */
+
+        .content {
+            margin-top: 80px;
+            margin-left: 20px;
+        }
+
+        .search {
+            margin-top: -40px;
+            margin-left: 42px;
+        }
+
+        .logo{
+            margin-left: 180px;
+            font-size: 4vw;
+        }
+
+        ul{
+            margin-top: -25px;
+            margin-left: -5px;
+        }
+
+        ul li{
+            margin-left: 50px;
+        }
+
+        ul li a{
+            font-size: 2vw;
+        }
+    }
+
+    @media screen and (max-width:450px){
+        /* responsive for mobile devices*/
+
+        .logo{
+            margin-left: 140px;
+            font-size: 4vw;
+        }
+
+        ul {
+            margin-top: -25px;
+        }
+
+        ul li{
+            margin-left: 42px;
+        }
+
+        ul li a{
+            font-size: 2vw;
+        }
+
+        .search {
+            margin-top: -40px;
+            margin-left: 38px;
+        }
+        
+    }
+
+
+ }
+
+/* Footer styles */
+.footer {
+    background-color: #6d006d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center align items horizontally in the footer */
+    align-items: center; /* Center align items vertically in the footer */
+    position: fixed;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}

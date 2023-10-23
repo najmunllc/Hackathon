@@ -1,0 +1,155 @@
+/* Add your CSS styles here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%,rgba(0, 0, 0, 0.5)50%), url(laptop.jpeg);
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container .logo {
+    color: #fff;
+}
+
+header {
+    background-color: #6d006d;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    background: radial-gradient(rgba(255, 255, 255,0.6));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative;
+
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fd574f;
+    cursor: pointer;
+}
+
+h2 {
+    color: #6d006d;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #fff;
+}
+
+p {
+    color: #fd574f;
+}
+
+.course-list li {
+    margin-bottom: 20px;
+}
+
+.signup-form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #6d006d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fd574f;
+}
+
+.footer {
+    background-color: #6d006d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center align items horizontally in the footer */
+    align-items: center; /* Center align items vertically in the footer */
+    position: fixed;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+
+}
+
+.footer img {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add spacing between the image and text */
+   
+}

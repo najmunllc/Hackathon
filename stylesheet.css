@@ -1,0 +1,596 @@
+/* Navbar Code */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%,rgba(0, 0, 0, 0.5)50%), url(shetechy.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar {
+   width: 100%;
+    height: 75px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    background-color: #6b006d;
+    color: #fff;
+    z-index: 999;
+    display: flex;
+}
+
+.icon, .menu, .search {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: auto;
+    height: 70px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.menu {
+    flex: 1;
+    height: 70px;
+}
+
+ul {
+    float: left;
+   list-style: none;
+   padding: 0;
+   margin: 2rem;
+   display: flex;
+   flex-direction: row;
+}
+
+ul li {
+    margin: 1rem;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #fd574f;
+    cursor: pointer;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown{
+    width: 15rem;
+    background-color:#6b006d ;
+    position: absolute;
+    z-index: 999;
+    padding: 1rem;
+    display: none;
+    border: 1px solid white;
+    border-radius: 4rem;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+.search {
+    width: auto;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.srch {
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #fff;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #fff;
+    border: 2px solid #fff;
+    margin-top: 13px;
+    color: #6b006d;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+ 
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.srch:focus {
+    outline: none;
+}
+
+/* Responsive styles for screens up to 768px */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Adjust the height to accommodate content */
+    }
+
+    .icon, .menu, .search {
+        width: 100%; /* Make the items full-width */
+        text-align: center; /* Center text within items */
+    }
+
+    .icon {
+        padding: 10px 0; /* Add some vertical padding */
+    }
+
+    .menu ul {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+
+    ul li {
+        margin: 1rem 0; /* Adjust spacing between menu items */
+    }
+
+    .search {
+        margin: 1rem 0; /* Add vertical margin to the search container */
+    }
+}
+
+
+
+
+
+
+/* Sign-Up Page */
+
+body {
+    margin: 0;
+    height: 120%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(laptop.jpeg);
+    background-size:cover;
+    background-repeat: repeat;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+
+}
+
+.sign-up-container {
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    text-align: center;
+    width: 30rem;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.form-container {
+    text-align: center;
+    width: 23rem;
+}
+
+.form-container input {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-container input:hover {
+    border-color: #800080;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.form-container .form-check-input {
+    width: 0.5rem;
+}
+
+label {
+    padding-top: 20px;
+    padding-left: 0;
+}
+
+.form-container button {
+    border: 2px solid #fff;
+    background-color: #800080;
+    color: #fff;
+    font-size: 1.15rem;
+    border-radius: 2rem;
+    padding: 0.75rem 2rem;
+}
+
+.form-container button:hover {
+    background-color: #600060;
+}
+
+.sign-up-container a {
+    text-decoration: none;
+}
+
+.sign-up-container a:hover {
+    text-decoration: underline;
+}
+
+.sign-up-footer h5 {
+    padding-top: 1rem;
+}
+
+.sign-up-header img {
+    max-width: 80%;
+    height: 6rem;
+}
+
+@media (max-width: 768px) {
+    .form-container input {
+        width: 80%;
+    }
+
+    .sign-up-footer img {
+        width: 60%;
+    }
+}
+
+.sign-up-container .page-footer {
+    text-align: center;
+}
+
+/* Terms-and-Condition Page */
+
+.terms-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 60px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(laptop.jpeg);
+    background-size:cover;
+    background-repeat: repeat;
+    color: #fff;
+}
+
+.terms-navbar {
+    position: fixed;
+    z-index: 999;
+    width: 400px;
+    overflow: auto;
+    max-height: 80vh;
+}
+
+.terms-navbar img {
+    width: 300px;
+    background-color: aliceblue;
+}
+
+.navbar-container {
+    padding-top: 2rem;
+    line-height: 1.5rem;
+}
+
+.navbar-container a {
+    padding-left: 1rem;
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+.navbar-container a:hover {
+    background-color:#3d3c3c;
+    border-radius: 1rem;
+}
+
+.close-icon {
+    position: fixed;
+    top: 3rem;
+    right: 4rem;
+    font-size: 40px !important;
+    color: #fff
+}
+
+.terms-page {
+    flex: 1;
+    padding-left: 35%;
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: #600060;
+    color: #fff;
+    z-index: 1;
+}
+
+@media screen and (max-width: 414px) {
+    .navbar-container {
+        display: none;
+        line-height: 0.5px;
+    }
+
+    .navbar-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-icon .bar {
+        width: 25px;
+        height: 3px;
+        padding-left: 20px;
+        background-color: #600060;
+        margin: 5px;
+    }
+
+    .close-icon {
+        top: 8.5rem;
+        right: 1.5rem;
+        position: fixed;
+    }
+
+    .terms-container {
+        flex-direction: column;
+        margin: 0;
+        font-size: 0.75rem;
+    }
+
+    .terms-navbar {
+        width: 100%;
+        display: block;
+        background-color: white;
+    }
+
+
+    .navbar-container a {
+        padding: 0.5rem 1rem;
+        display: block;
+    }
+
+    .terms-page {
+        padding-top: 5rem;
+    }
+
+    .terms-navbar img {
+        width: 150px;
+        z-index: 999;
+    }
+
+    .terms-page {
+        flex: 1;
+        padding-left: 1%;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .navbar-container {
+        display: none;
+        /* Hide the navigation menu */
+    }
+
+    .navbar-icon {
+        display: block;
+        /* Display the icon for the mobile menu */
+        cursor: pointer;
+    }
+
+    .navbar-icon .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #600060;
+        margin: 5px;
+    }
+
+
+    .navbar-container a {
+        padding: 0.5rem 1rem;
+        /* Add space around the links */
+        display: block;
+        /* Make the links stack vertically on small screens */
+    }
+
+    .terms-navbar img {
+        width: 200px;
+        /* Image size for screens below 700px */
+    }
+}
+
+
+/* Health Page and finacial lit Page*/
+
+.course-heading h1 {
+    font-size: 3rem;
+    padding: 2rem;
+    color: #600060;
+    margin-left: 10rem;
+}
+
+.course-heading h2 {
+    font-size: 20px;
+    line-height: 1.4em;
+    margin-left: 12rem;
+    color: #fff;
+}
+
+.course-heading h5 {
+    font-size: 16px;
+    margin-left: 12rem;
+    color: #fd574f;
+}
+
+.course-heading p{
+    color: white;
+    margin-left: 12rem;
+    line-height: 2rem;
+}
+
+.course-container {
+    margin-top: 6rem;
+}
+
+.container h2 {
+    margin-left: 12rem;
+    font-size: 2rem;
+    padding: 2rem;
+    color: #600060;
+    margin-left: 10rem;
+}
+
+.container p{
+    margin-left: 12rem;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+.container select {
+    width: 70%;
+    height: 2rem;
+    margin-left: 12rem;
+    margin-bottom: 5rem;
+}
+
+.container select:hover {
+    background-color: #f0f0f0;
+    /* Change this color to your desired hover effect */
+    color: #000;
+    /* Change this color to your desired text color on hover */
+}
+
+/* Base styles for larger screens (as per your original styles) */
+
+/* Responsive styles for screens up to 470px */
+@media screen and (max-width: 470px) {
+    .course-heading h1 {
+        padding: 1rem;
+        font-size: 0.5rem;
+        /* Adjust the font size */
+        max-width: 90%;
+        /* Adjust the maximum width */
+    }
+
+    .course-heading p,
+    h3 {
+        font-size: 0.5rem;
+        /* Adjust the font size */
+        max-width: 90%;
+        /* Adjust the maximum width */
+    }
+
+
+    .course-container {
+        margin-top: 5rem;
+    }
+
+    .module-container {
+        margin: 2rem;
+        justify-content: center;
+    }
+
+    .weekly-module-heading {
+        margin: 1rem;
+    }
+
+    .weekly-module {
+        margin: 1rem;
+    }
+
+    .module {
+        height: 16rem;
+        max-width: 12rem;
+    }
+
+    .module button {
+        width: 6rem;
+        height: 1.5rem;
+        font-size: 0.85rem;
+        margin: 1rem;
+    }
+}
+
+
+/* Responsive styles for smaller screens (adjust as needed) */
+@media screen and (min-width:471)and (max-width: 768px) {
+    .course-heading h1 {
+        padding: 1rem;
+    }
+
+    .course-heading p,
+    h3 {
+        font-size: 16px;
+        max-width: 80%;
+    }
+
+    .course-container {
+        margin-top: 3rem;
+    }
+
+    .module-container {
+        margin: 2rem;
+        justify-content: center;
+    }
+
+    .weekly-module-heading {
+        margin: 1rem;
+    }
+
+    .weekly-module {
+        margin: 1rem;
+    }
+
+    .module {
+        height: 16rem;
+        max-width: 12rem;
+    }
+
+    .module button {
+        width: 6rem;
+        height: 1.5rem;
+        font-size: 0.85rem;
+        margin: 1rem;
+    }
+}

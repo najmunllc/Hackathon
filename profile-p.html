@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styles for the profile page */
+        body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(laptop.jpeg);
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.profile {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.profile h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.profile p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.edit-button {
+    background-color: #6d006d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Styles for responsive design */
+@media (max-width: 600px) {
+    .profile {
+        max-width: 90%;
+    }
+
+    .profile img {
+        max-width: 100px;
+    }
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color:#6d006d;
+    color: #fff;
+    z-index: 1;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">HerEdQuest</h2>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="index copy.html">HOME</a></li>
+                <li><a href="discussionforum.html">FORUM</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">COURSES</a>
+                    <ul class="dropdown">
+                        <li><a href="gender_equality.html">Gender Bias</a></li>
+                        <li><a href="marriage.html">Marriage/Pregnancy</a></li>
+                        <li><a href="financialit-p.html">Financial Lit</a></li>
+                        <li><a href="smallbiz.html">Small Biz</a></li>
+                        <li><a href="safety.html">Safety Concerns</a></li>
+                        <li><a href="mentorship.html">Mentorship</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="search">
+            <input class="srch" type="search" name="" placeholder="Search Here">
+            <a href="#"><button class="btn">Search</button></a>
+        </div>
+    </div>
+
+
+    <div class="profile">
+        <img src="icon2.jpg" alt="User Photo" id="userPhoto">
+        <h1 id="userName">Name</h1>
+        <p id="userUsername">Username: @username</p>
+        <p id="userEmail">Email: user@email.com</p>
+        <input type="file" accept="image/*" id="fileInput" style="display: none;">
+        <button class="edit-button" id="editName">Edit Name</button>
+        <button class="edit-button" id="editUsername">Edit Username</button>
+        <button class="edit-button" id="editEmail">Edit Email</button>
+        <button class="edit-button" id="editPhoto">Edit Photo</button>
+    </div>
+
+
+    <div class="page-footer">
+        <p> &copy; 2023 | HerEdQuest</p>
+    </div>
+
+    <script>
+      // Function to edit the user's name
+document.getElementById("editName").addEventListener("click", function () {
+    const newName = prompt("Enter a new name:");
+    if (newName !== null && newName !== "") {
+        document.getElementById("userName").textContent = newName;
+    }
+});
+
+// Function to edit the user's username
+document.getElementById("editUsername").addEventListener("click", function () {
+    const newUsername = prompt("Enter a new username:");
+    if (newUsername !== null && newUsername !== "") {
+        document.getElementById("userUsername").textContent = "Username: @" + newUsername;
+    }
+});
+
+// Function to edit the user's email
+document.getElementById("editEmail").addEventListener("click", function () {
+    const newEmail = prompt("Enter a new email address:");
+    if (newEmail !== null && newEmail !== "") {
+        document.getElementById("userEmail").textContent = "Email: " + newEmail;
+    }
+});
+
+// Function to edit the user's photo
+document.getElementById("editPhoto").addEventListener("click", function () {
+    // Trigger the hidden file input
+    document.getElementById("fileInput").click();
+});
+
+// Function to handle the file input change event (image upload)
+document.getElementById("fileInput").addEventListener("change", function (event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const userPhoto = document.getElementById("userPhoto");
+            userPhoto.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+});
+
+// Function to handle the file input change event (image upload)
+document.getElementById("fileInput").addEventListener("change", function (event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const userPhoto = document.getElementById("userPhoto");
+            userPhoto.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+});
+
+    </script>
+</body>
+</html>

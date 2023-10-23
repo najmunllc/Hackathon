@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%,rgba(0, 0, 0, 0.5)50%), url(laptop.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    background: radial-gradient(rgba(255, 255, 255,0.6));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: #6d006d;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color:#6d006d;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #fd574f;
+    cursor: pointer;
+}
+
+.name {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: #e3ba57;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+.resources {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: #e3ba57;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+/* styling the links */
+
+.links-menu a {
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 1px #e3ba57 solid;
+    background-color: #e3ba57;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 30px;
+    padding: 30px; /* provides space between */
+}
+
+a:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 10px 2px #6b006d;
+}

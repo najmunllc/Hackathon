@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerEdQuest - Landing Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="https://kit.fontawesome.com/7cb4d40054.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav>
+        <div class="container">
+            <h1 class="logo"><img src="#" alt="">HerEdQuest</h1>
+            <ul>
+                <li><a href="index copy.html">Home</a></li>
+                <li><a href="terms-condition-page.html">Terms</a></li>
+                <li><a href="mentorship.html">Mentorship</a></li>
+                <li><a href="discussionforum.html">Forum</a></li>
+
+                <li><a href="courses.html">Courses</a>
+                  
+                </li>
+
+                <li><a href="signup-p.html">Signup</a>
+                    <ul class="dropdown2">
+                        <li><a href="profile-p.html"></a>Profile</li>
+                    </ul>
+                </li>
+               
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+       
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="team_container">
+            <div class="team_header">
+                <div class="team_header_title">
+                    <h3>Meet Our Team</h3>
+                    <h2>Our Team</h2>
+                </div>
+                <div class="team_header_text">
+                    Meet the dedicated minds behind our innovative solutions! Our development team is a group of passionate and skilled professionals who bring creative ideas to life. <br>
+                    <br>With expertise in front-end and back-end development, they work tirelessly to ensure our platform is user-friendly and technologically advanced
+                </div>
+            </div>
+            
+            <!-- Team member cards go here -->
+            <section id="team" class="team">
+                <div class="container">
+                    
+                    <div class="team-members">
+                        <!-- Team Member 1 -->
+                        <div class="team-member">
+                            <img src="user-avatar.jpg" alt="G Jamillah Pugh">
+                            <h3>G Jamillah Pugh</h3>
+                            <p>Front End Developer</p>
+                        </div>
+            
+                        <!-- Team Member 2 -->
+                        <div class="team-member">
+                            <img src="user-avatar.jpg" alt="Pranoti Vardi">
+                            <h3>Pranoti Vardi</h3>
+                            <p>Front End Developer</p>
+                        </div>
+                </div>
+            </section>
+            
+
+    <!-- Challenge Statement Section -->
+    <section class="challenge" id="challenge">
+        <div class="row justify-content-between align-items-center">
+            <div class="section-content">
+                <h2>Our Challenge Statement</h2>
+            <p>"Gender inequality remains a significant barrier to education for women worldwide, limiting their opportunities for personal and economic growth. Our platform will be dedicated to addressing this challenge head-on by providing a comprehensive solution to empower women through education.”
+            </p>
+           
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Solution Statement Section -->
+    <section class="solution" id="solution">
+        <div class="container">
+            <div class="section-solution">
+                <h2>Our Solution Statement</h2>
+            <p>"Our solution is to harness the power of technology to provide women with accessible, personalized, and inclusive educational resources. We will offer real-time language translation, interactive quizzes, user-generated content sharing, and a supportive community. By combining these elements, we can create an environment where women can thrive, learn, and connect with a global network of like-minded individuals." 
+            </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Mission Statement Section -->
+    <section class="mission" id="mission">
+        <div class="container">
+            <div class="section-mission">
+                <h2>Our Mission</h2>
+            <p>"Our mission is to break down the barriers that have prevented women from accessing quality education. We believe that every woman should have equal opportunities to learn, grow, and succeed. Our platform will be a catalyst for this change."
+            </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Global Statement Section -->
+    <section class="vision" id="vision">
+        <div class="container">
+            <div class="section-global">
+                <h2>Our Global Statement</h2>
+            <p>"While we address education for women, we understand that education knows no boundaries. Our solution is not confined to one region; it's a global movement to empower women everywhere. Together, we can rewrite the story of education and gender equality. <span style="color: #6b006d"><strong>Courses included are: Online Educ, Gender Bias, Safety, Financial Literacy, Marriage, Entrepreneurship</strong></span>"
+            </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Get in Touch Section -->
+    <section class="contact" id="contact">
+        <div class "container">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you.</p>
+
+            <form>
+                <input type="text" placeholder="Name" id="name" name="name" required>
+                <input type="email" placeholder="Email" id="email" name="email" required>
+                <textarea placeholder="Message" id="message" name="message" required></textarea>
+                <input type="button" value="Send" onclick="submitForm()">
+            </form>
+           
+        </div>
+    </section>
+
+    <!-- JavaScript for the "Get in Touch" form -->
+<script>
+    // Function to handle form submission
+    function submitForm() {
+        // Get form elements by their IDs
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        // Here, you can perform actions like sending the form data to your server via an API or taking any other desired action
+
+        // For this example, let's simply display an alert with the submitted data
+        const submittedData = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+        alert("Form submitted with the following data:\n" + submittedData);
+
+        // Optionally, you can clear the form fields
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+    }
+</script>
+
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="footer-content"> 
+            <h3>Contact Us</h3>
+            <p>Email: HerEdQuest@gmail.com</p>
+            <p>Phone: +1 678-631-9141</p>
+            <p>Address: Online Pennsylvania, USA</p>
+        </div>
+        <div class="footer-content">
+          <h3>Quick links</h3>
+            <ul class="list">
+                <li><a href="index copy.html">Home</a></li>
+                <li><a href="discussionforum.html">Forum</a></li>
+                <li><a href="mentorship.html">Mentorship</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="terms-condition-page.html">Terms</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/herEdQuest"><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="bottom-bar">
+        <p>&copy; 2023 HerEdQuest All Rights Reserved</p>
+     </div>
+    </footer>
+</body>
+</html>

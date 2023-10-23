@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link type="text/css" href="discussionforum.css" rel="stylesheet">
+    <title>Discussion App</title>
+</head>
+<body>
+	<header>
+		<h1>Discussion Portal</h1>
+		<div class="home-button">
+		<a href="index copy.html" class="home-button">Home</a> <!-- Home button added here -->
+	</div>
+	</header>
+	<div class="main-container">
+		<div class="container-left">
+			<div class="button-wrapper">
+				<button class="btn-add" id="show-welcome">New Question form</button>
+				<input type="text" name="search" id="search" class="search" placeholder="search questions . . .">
+			</div>
+			<div class="questions" id="questions">
+				<div class="que-item" id="1">
+					<h2 class="que-title">Women Empowerment</h2>
+					<p class="que-text">What all action we can take to spread women's education across world?</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-right" id="right">
+			<div id="welcome">
+				<h1>Welcome to Discussion Portal !</h1>
+				<p class="text">Enter a subjct and question to get started</p>
+				<form id="formAdd">
+					<input type="text" name="subject" class="subject" placeholder="Subject" required="true"><br>
+					<textarea name="question" rows="6" placeholder="Question" required></textarea>
+					<div class="btn-submit"><button id="add-que" type="submit">Submit</button></div>
+				</form>
+			</div>
+			<div id="description">
+				<h2 class="text">Question</h2>
+				<div class="que-content">
+					<h2 class="que-title" id="que-title">Women Empowerment</h2>
+					<p class="que-text" id="que-text">What all action we can take to spread women's education across world?</p>
+					<span class="fav">Fav</span>
+				</div>
+				<div class="resolve">
+					<div class="icons">
+						<i class="fa fa-thumbs-up" id="upvote" aria-hidden="true"></i>
+						<span id="votes"></span>
+						<i class="fa fa-thumbs-down" id="downvote" aria-hidden="true"></i>	
+						<i class="fa fa-heart" id="favorite" aria-hidden="true"></i>	
+					</div>
+					<button id="resolve">Resolve</button>
+				</div>
+				<div class="response-wrapper">
+					<h3 class="text">Response</h3>
+					<div class="responses" id="responses">
+						<div class="response">
+							<h3 class="res-name">Amit</h3>
+							<p class="res-text">Local storage can only save strings, so storing objects requires that they be turned into strings using JSON.</p>
+						</div>
+						<div class="response">
+							<h3 class="res-name">Amit</h3>
+							<p class="res-text">Local storage can only save strings, so storing objects requires that they be turned into strings using JSON.</p>
+						</div>
+					</div>
+					<div class="response-form">
+						<h2 class="text">Add Response</h2>
+						<form id="resForm">
+							<input type="text" name="subject" class="subject" placeholder="Enter Name" minlength="3" maxlength="20" required><br>
+							<textarea name="question" rows="4" placeholder="Enter Comment" maxlength="1000" required></textarea>
+							<div class="btn-submit"><button id="add-res">Submit</button></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="page-footer">
+        <p> &copy; 2023 | HerEdQuest</p>
+    </div>
+	<script src="discussionforum.js"></script>
+</body>
+</html>
